@@ -29,7 +29,12 @@ const ProfileHeader = () => {
 
         {/* Name and Badge */}
         <div className="space-y-3">
-          <div className="flex items-center justify-center gap-2">
+          <div className="relative flex items-center justify-center gap-2">
+            <img 
+              src="/lovable-uploads/b0914b5a-c707-41aa-a2e6-22ce5ecdb193.png" 
+              alt="Badge" 
+              className="absolute -z-10 w-24 h-24 opacity-30"
+            />
             <h1 className="text-4xl font-bold text-warm-text">ZaxSky</h1>
             <span className="text-2xl">⚡</span>
           </div>
@@ -42,9 +47,6 @@ const ProfileHeader = () => {
           <h2 className="text-2xl font-semibold text-warm-text">
             Content Creator und Streamer
           </h2>
-          <p className="text-muted-foreground max-w-sm mx-auto">
-            Willkommen auf meiner Seite! Hier findest du alles über meine Streams, Videos und Projekte.
-          </p>
         </div>
 
         {/* Badges */}
@@ -59,53 +61,6 @@ const ProfileHeader = () => {
             Content Creation
           </Badge>
         </div>
-
-        {/* Social Links */}
-        <div className="flex justify-center gap-3">
-          <Button 
-            size="icon" 
-            variant="outline" 
-            className="rounded-full border-coral-accent/30 hover:bg-coral-accent/10 hover:border-coral-accent transition-colors"
-          >
-            <Twitch className="h-4 w-4" />
-          </Button>
-          <Button 
-            size="icon" 
-            variant="outline" 
-            className="rounded-full border-coral-accent/30 hover:bg-coral-accent/10 hover:border-coral-accent transition-colors"
-          >
-            <Youtube className="h-4 w-4" />
-          </Button>
-          <Button 
-            size="icon" 
-            variant="outline" 
-            className="rounded-full border-coral-accent/30 hover:bg-coral-accent/10 hover:border-coral-accent transition-colors"
-          >
-            <Twitter className="h-4 w-4" />
-          </Button>
-          <Button 
-            size="icon" 
-            variant="outline" 
-            className="rounded-full border-coral-accent/30 hover:bg-coral-accent/10 hover:border-coral-accent transition-colors"
-          >
-            <Github className="h-4 w-4" />
-          </Button>
-          <Button 
-            size="icon" 
-            variant="outline" 
-            className="rounded-full border-coral-accent/30 hover:bg-coral-accent/10 hover:border-coral-accent transition-colors"
-          >
-            <Mail className="h-4 w-4" />
-          </Button>
-        </div>
-
-        {/* CTA Button */}
-        <Button 
-          size="lg" 
-          className="bg-coral-accent hover:bg-coral-accent/90 text-warm-text font-semibold px-8 py-3 rounded-full shadow-soft transition-all duration-300 hover:shadow-profile hover:scale-105"
-        >
-          Stream ansehen
-        </Button>
       </div>
     </div>
   );
