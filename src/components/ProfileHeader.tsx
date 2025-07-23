@@ -1,18 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Github, Twitter, Twitch, Youtube, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ProfileHeader = () => {
   return (
     <div className="min-h-screen bg-gradient-subtle flex flex-col items-center justify-center px-4 py-12">
       <div className="max-w-md w-full text-center space-y-8">
-        {/* Logo */}
-        <div className="flex justify-center mb-8">
+        {/* Header with Logo and Navigation */}
+        <div className="flex justify-between items-center mb-8 w-full">
           <img 
             src="/lovable-uploads/92eb5656-5382-4737-93be-61715951152d.png" 
             alt="ZaxSky Logo" 
             className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
           />
+          <Link 
+            to="/das-ist-zaxsky"
+            className="text-warm-text hover:text-coral-accent transition-colors duration-300 font-medium"
+          >
+            Das ist ZaxSky
+          </Link>
         </div>
 
         {/* Profile Picture */}
@@ -53,21 +58,6 @@ const ProfileHeader = () => {
           </h2>
         </div>
 
-        {/* Badges */}
-        <div className="flex flex-wrap justify-center gap-2">
-          <Badge variant="secondary" className="bg-coral-accent/20 text-warm-text border-coral-accent/30">
-            Content Creator
-          </Badge>
-          <Badge variant="secondary" className="bg-coral-accent/20 text-warm-text border-coral-accent/30">
-            Thüringen
-          </Badge>
-          <Badge variant="secondary" className="bg-coral-accent/20 text-warm-text border-coral-accent/30">
-            17 Jahre
-          </Badge>
-          <Badge variant="secondary" className="bg-coral-accent/20 text-warm-text border-coral-accent/30">
-            (Singel)
-          </Badge>
-        </div>
       </div>
     </div>
   );
