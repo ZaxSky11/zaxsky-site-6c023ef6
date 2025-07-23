@@ -9,7 +9,7 @@ const ProfileHeader = () => {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <img 
-            src="/lovable-uploads/d856f0f4-6ff2-4854-b04d-356f730c0314.png" 
+            src="/lovable-uploads/92eb5656-5382-4737-93be-61715951152d.png" 
             alt="ZaxSky Logo" 
             className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
           />
@@ -36,7 +36,11 @@ const ProfileHeader = () => {
               className="absolute -z-10 w-24 h-24 opacity-30"
             />
             <h1 className="text-4xl font-bold text-warm-text">ZaxSky</h1>
-            <span className="text-2xl">⚡</span>
+            <img 
+              src="/lovable-uploads/0e389a12-172c-4a42-8451-54cbcc4f1cb2.png" 
+              alt="Icon" 
+              className="w-8 h-8 ml-2"
+            />
           </div>
           <p className="text-muted-foreground text-lg">janis</p>
           <div className="h-px bg-border w-24 mx-auto"></div>
@@ -52,13 +56,16 @@ const ProfileHeader = () => {
         {/* Badges */}
         <div className="flex flex-wrap justify-center gap-2">
           <Badge variant="secondary" className="bg-coral-accent/20 text-warm-text border-coral-accent/30">
-            Gaming
+            Content Creator
           </Badge>
           <Badge variant="secondary" className="bg-coral-accent/20 text-warm-text border-coral-accent/30">
-            Streaming
+            Thüringen
           </Badge>
           <Badge variant="secondary" className="bg-coral-accent/20 text-warm-text border-coral-accent/30">
-            Content Creation
+            17 Jahre
+          </Badge>
+          <Badge variant="secondary" className="bg-coral-accent/20 text-warm-text border-coral-accent/30">
+            (Singel)
           </Badge>
         </div>
       </div>
